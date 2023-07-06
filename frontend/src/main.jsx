@@ -1,3 +1,4 @@
+// Dependencies Import
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {
@@ -6,6 +7,10 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import store from "./store.js";
+import { Provider } from "react-redux";
+
+// App Related Import
 import App from "./App.jsx";
 import "./morph.min.css";
 // import "bootstrap/dist/css/bootstrap.css";
@@ -27,7 +32,9 @@ const router = createBrowserRouter(
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <Provider store={store}>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </Provider>
 );
