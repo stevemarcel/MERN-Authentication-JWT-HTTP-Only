@@ -77,7 +77,10 @@ const updateUserProfile = asyncHandler(async (req, res) => {
     user.name = req.body.name || user.name;
     user.email = req.body.email || user.email;
 
-    if (req.body.password) {
+    if (req.body.password && (await user.matchPassword(req.body.password))) {
+      res.status(400);
+      throw new Error("Can not use old password");
+    } else if (req.body.password) {
       user.password = req.body.password;
     }
 

@@ -13,6 +13,7 @@ import { Provider } from "react-redux";
 // App Related Import
 import App from "./App.jsx";
 import "./morph.min.css";
+import PrivateRoute from "./components/PrivateRoute.jsx";
 // import "bootstrap/dist/css/bootstrap.css";
 // import "./index.css";
 
@@ -20,6 +21,7 @@ import "./morph.min.css";
 import HomePage from "./pages/HomePage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
+import ProfilePage from "./pages/ProfilePage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,6 +29,11 @@ const router = createBrowserRouter(
       <Route index={true} path="/" element={<HomePage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
+
+      {/* Private Routes */}
+      <Route path="" element={<PrivateRoute />}>
+        <Route path="/profile" element={<ProfilePage />} />
+      </Route>
     </Route>
   )
 );
