@@ -6,7 +6,7 @@ This is a Mern Project that focuses on Authentication. It stores the JWT token i
 
 [Link]: https://spring-bud-octopus-shoe.cyclic.app/ 'MERN AUTH APP'
 
-### 🧠 Skills Used In this Project
+### 🧠 Skills used In this project
 
 <p align="left">
   
