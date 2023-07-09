@@ -14,8 +14,9 @@ import { Provider } from "react-redux";
 import App from "./App.jsx";
 import "./morph.min.css";
 import PrivateRoute from "./components/PrivateRoute.jsx";
+
+// using bootstrap CDN
 // import "bootstrap/dist/css/bootstrap.css";
-// import "./index.css";
 
 // Pages Import
 import HomePage from "./pages/HomePage.jsx";

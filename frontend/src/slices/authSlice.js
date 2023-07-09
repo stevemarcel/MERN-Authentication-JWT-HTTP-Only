@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
@@ -13,7 +12,7 @@ const authSlice = createSlice({
       state.userInfo = action.payload;
       localStorage.setItem("userInfo", JSON.stringify(action.payload));
     },
-    deleteCredentials: (state, action) => {
+    deleteCredentials: (state) => {
       state.userInfo = null;
       localStorage.removeItem("userInfo");
     },
