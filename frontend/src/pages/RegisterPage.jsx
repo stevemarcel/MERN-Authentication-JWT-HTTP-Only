@@ -44,7 +44,7 @@ const RegisterPage = () => {
 
   return (
     <FormContainer>
-      <h1>Sing Up</h1>
+      <h1>Register</h1>
 
       <Form onSubmit={registerHandler}>
         <Form.Group className="my-2" controlId="name">
@@ -88,13 +88,13 @@ const RegisterPage = () => {
           <Loader />
         ) : (
           <Button type="submit" variant="primary" className="mt-3">
-            Sign Up
+            Register
           </Button>
         )}
 
         <Row className="py-3">
           <Col>
-            Already have an account? <Link to="/login">Sign In</Link>
+            Already have an account? <Link to="/login">Login</Link>
           </Col>
         </Row>
       </Form>

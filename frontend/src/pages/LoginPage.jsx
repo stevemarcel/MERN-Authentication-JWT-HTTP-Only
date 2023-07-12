@@ -38,7 +38,7 @@ const LoginPage = () => {
 
   return (
     <FormContainer>
-      <h1>Sing In</h1>
+      <h1>Login</h1>
 
       <Form onSubmit={loginHandler}>
         <Form.Group className="my-2" controlId="email">
@@ -64,13 +64,13 @@ const LoginPage = () => {
           <Loader />
         ) : (
           <Button type="submit" variant="primary" className="mt-3">
-            Sign In
+            Login
           </Button>
         )}
 
         <Row className="py-3">
           <Col>
-            New Customer? <Link to="/register">Sign Up</Link>
+            New Customer? <Link to="/register">Register</Link>
           </Col>
         </Row>
       </Form>

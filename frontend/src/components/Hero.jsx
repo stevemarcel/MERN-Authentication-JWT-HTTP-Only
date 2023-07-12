@@ -16,12 +16,12 @@ const Hero = () => {
           <div className="d-flex">
             <LinkContainer to="/login">
               <Button variant="primary" className="me-3" size="sm">
-                Sign In
+                Login
               </Button>
             </LinkContainer>
             <LinkContainer to="/register">
               <Button variant="info" className="me-3" size="sm">
-                Sign Up
+                Register
               </Button>
             </LinkContainer>
           </div>
