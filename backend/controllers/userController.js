@@ -39,7 +39,7 @@ const registerUser = asyncHandler(async (req, res) => {
     res.status(201).json({ _id: user._id, name: user.name, email: user.email });
   } else {
     res.status(401);
-    throw new Error("Invalid user data");
+    throw new Error("Invalid Inputs");
   }
 });
 

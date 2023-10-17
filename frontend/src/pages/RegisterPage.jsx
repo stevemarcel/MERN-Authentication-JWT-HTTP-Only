@@ -31,6 +31,8 @@ const RegisterPage = () => {
     e.preventDefault();
     if (password !== confirmPassword) {
       toast.error("Passwords do not match");
+    } else if (name === "" || email === "" || password === "" || confirmPassword === "") {
+      toast.error("Invalid Inputs");
     } else {
       try {
         const res = await registerApiCall({ name, email, password }).unwrap();
