@@ -40,19 +40,21 @@ const Hero = () => {
                 </Button>
               </LinkContainer>
             </div>
-            <p className="card-text mt-3">
-              <strong>Note:</strong> You can use the following credentials to login:
-            </p>
-            <p className="card-text">
-              <strong>Email:</strong> steve@gmail.com
-            </p>
-            <p className="card-text">
-              <strong>Password:</strong> steve12345
-            </p>
+            <div className="mt-5 text-left">
+              <p className="card-text">
+                <strong>Note:</strong> You can use the following credentials to login:
+              </p>
+              <p className="card-text">
+                <strong>Email:</strong> steve@gmail.com
+              </p>
+              <p className="card-text">
+                <strong>Password:</strong> steve12345
+              </p>
 
-            <p className="card-text">
-              Or you can register your own account by clicking the Register button above.
-            </p>
+              <p className="card-text">
+                Or you can register your own account by clicking the Register button above.
+              </p>
+            </div>
           </div>
         )}
       </div>
